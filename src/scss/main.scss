@@ -9,14 +9,16 @@ html {
 body {
   background: $darkviolet;
   color: aliceblue;
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  grid-template-rows: repeat(8, 1fr);
-
 }
+
 .himg{
   grid-column-start: 1;
   grid-row-start: 1;
+}
+.pageview{
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows: repeat(8, 1fr);
 }
 .hmenu{
   grid-column-start: 1;
