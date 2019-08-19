@@ -11,7 +11,7 @@ body {
   color: aliceblue;
   display: grid;
   grid-template-columns: 210px 1fr;
-  grid-template-rows: 100px 200px 200px 200px 200px 400px 200px 100px;
+  grid-template-rows: repeat(8, 1fr);
 
 }
 .himg{
@@ -33,6 +33,13 @@ body {
 .about-me{
   grid-column-start: 2;
   grid-row-start: 4;
+  &__h2{
+    font-size: 16px;
+  }
+  &__img{
+  }
+  &__p{
+  }
 }
 .technology{
   grid-column-start: 2;
@@ -48,5 +55,5 @@ body {
 }
 .body__footer{
   grid-column-start: 2;
-  grid-row-start: 7;
+  grid-row-start: 8;
 }
