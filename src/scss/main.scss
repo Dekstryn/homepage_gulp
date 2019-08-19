@@ -6,11 +6,56 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+body {
+  background: $darkviolet;
+  color: aliceblue;
 }
 
-body {
-  color: $yellow;
-  background: $darkviolet;
+.himg{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.pageview{
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows: repeat(8, 1fr);
+}
+.hmenu{
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.myimg{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.htext{
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.about-me{
+  grid-column-start: 2;
+  grid-row-start: 4;
+  &__h2{
+    font-size: 16px;
+  }
+  &__img{
+  }
+  &__p{
+  }
+}
+.technology{
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+.subpages{
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+.contact{
+  grid-column-start: 2;
+  grid-row-start: 7;
+}
+.body__footer{
+  grid-column-start: 2;
+  grid-row-start: 8;
 }
