@@ -25,6 +25,7 @@ body {
   grid-column-start: 1;
   grid-row-start: 2;
   &__text{
+    list-style-type: none;
   }
   &__ahref{
     text-decoration: none;
