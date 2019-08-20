@@ -31,6 +31,9 @@ body {
     text-decoration: none;
     color: aliceblue;
   }
+  &__switcher{
+    display: none;
+  }
 }
 .about-me{
   grid-column-start: 2;
