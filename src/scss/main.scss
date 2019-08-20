@@ -19,7 +19,7 @@ body {
 .pageview{
   display: grid;
   grid-template-columns: 180px 1fr;
-  grid-template-rows: 180px repeat(7, 1fr);
+  grid-template-rows: 180px 1fr 10% repeat(5, 400px);
 }
 .hmenu{
   grid-column-start: 1;
@@ -57,7 +57,7 @@ body {
   }
   &__title{
     font-size: 32px;
-    margin-inline-start: 30%; 
+    text-align: center;
   }
   &__name{
     flex: 1;
