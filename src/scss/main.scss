@@ -57,6 +57,9 @@ body {
     font-size: 32px;
     margin-inline-start: 30%; 
   }
+  &__p{
+    flex: 1;
+  }
 }
 .subpages{
   grid-column-start: 2;
