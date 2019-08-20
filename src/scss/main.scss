@@ -50,6 +50,9 @@ body {
 .technology{
   grid-column-start: 2;
   grid-row-start: 3;
+  &__skills{
+    display: flex;
+  }
   &__title{
     font-size: 32px;
     margin-inline-start: 30%; 
