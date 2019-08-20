@@ -24,6 +24,11 @@ body {
 .hmenu{
   grid-column-start: 1;
   grid-row-start: 2;
+  &__text{
+  }
+  &__ahref{
+    text-decoration: none;
+  }
 }
 .myimg{
   grid-column-start: 2;
