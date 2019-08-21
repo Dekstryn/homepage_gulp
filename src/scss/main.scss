@@ -21,7 +21,7 @@ body {
   grid-template-columns: 180px 1fr;
   grid-template-rows: 180px 1fr 10% repeat(5, 400px);
 }
-.hmenu{
+.menu{
   grid-column-start: 1;
   grid-row-start: 2;
   &__text{
