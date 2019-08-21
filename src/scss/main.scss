@@ -19,7 +19,7 @@ body {
 .pageview{
   display: grid;
   grid-template-columns: 180px 1fr;
-  grid-template-rows: 180px 1fr 10% repeat(5, 400px);
+  grid-template-rows: 180px repeat(6, 1);
 }
 .menu{
   grid-column-start: 1;
