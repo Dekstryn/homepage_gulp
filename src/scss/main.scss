@@ -82,6 +82,10 @@ body {
 .subpages{
   grid-column-start: 2;
   grid-row-start: 4;
+  &__title{
+    font-size: 32px;
+    text-align: center;
+  }
 }
 .contact{
   grid-column-start: 2;
