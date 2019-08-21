@@ -13,7 +13,7 @@ body {
   position: fixed;
 }
 .pageview{
-  margin: 180px 0px 0px 180px;
+  margin: 0px 0px 0px 180px;
 }
 .menu{
   position: fixed;
@@ -33,11 +33,11 @@ body {
   justify-self: center;
   &__profile-img{
     border-radius: 30%;
-    margin-inline-start: 40%;
+    margin: 180px 0px 0px 40%;
   }
   &__title{
     font-size: 32px;
-    margin-inline-start: 40%;
+    margin: 0px 0px 0px 40%;
   }
   &__ahref{
     color: rgb(255, 60, 0);
