@@ -100,9 +100,31 @@ body {
   padding: 16px 0px;
 }
 /*subpage artykuly.html css style*/
-.article-view__header{
+.article-view{
+  padding: 0px 16px 0px 16px;
+  &__header{
   font-size: 32px;
   text-align: center;
+  }
+  &__img{
+    float: left;
+    border-radius: 10%;
+    padding: 0px 8px 8px 0px;
+  }
+  &__ul{
+    list-style-type: none;
+  }
+  &__ahref{
+    color: $ahref_color;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.main__ahref{
+  color: $ahref_color;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 16px 0px 16px;
 }
 /*end subpage artykuly.html css style*/
 
@@ -144,4 +166,9 @@ body {
       text-align: center;
     }
   }
+  /*subpage artykuly.html css style*/
+.article-view__header{
+  margin: 32px 0px 16px 0px;
+}
+/*end subpage artykuly.html css style*/
 }
