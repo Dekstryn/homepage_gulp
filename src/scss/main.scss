@@ -126,8 +126,15 @@ body {
   font-weight: bold;
   padding: 0px 16px 0px 16px;
 }
-/*end subpage artykuly.html css style*/
-
+/*subpage amiejsca.html css style*/
+.cities__box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/*end subpage miejsca.html css style*/
 @media(min-width: $tablet){
   .menu__switcher{
     display: none;
