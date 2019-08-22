@@ -25,9 +25,6 @@ body {
     text-decoration: none;
     color: black;
   }
-  &__switcher{
-    display: none;
-  }
 }
 .about-me{
   justify-self: center;
@@ -96,6 +93,11 @@ body {
   font-style: italic;
   padding: 16px 0px;
 }
+@media(min-width: $tablet){
+  .menu__switcher{
+    display: none;
+  }
+}
 @media(max-width: $tablet){
   .pageview{
     margin: 0px 0px 0px 0px;
@@ -107,11 +109,17 @@ body {
     margin: 0px;
     padding: 8px 8px 8px 8px;
     background: $backgroud_color;
+    width: 100%;
+    top: 0;
     &__text{
       padding: 0px;
     }
     &__text--visible{
       display:none;
+    }
+    &__switcher{
+      display: block;
+      top: 0;
     }
   }
   .about-me{
@@ -119,7 +127,7 @@ body {
     display: none;
     }
     &__title{
-      margin: 16px 0px;
+      margin: 32px 0px;
       text-align: center;
     }
   }
