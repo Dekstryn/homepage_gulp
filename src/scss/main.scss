@@ -99,6 +99,13 @@ body {
   font-style: italic;
   padding: 16px 0px;
 }
+/*subpage artykuly.html css style*/
+.article-view__header{
+  font-size: 32px;
+  text-align: center;
+}
+/*end subpage artykuly.html css style*/
+
 @media(min-width: $tablet){
   .menu__switcher{
     display: none;
