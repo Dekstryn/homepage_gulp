@@ -40,7 +40,7 @@ body {
     margin: 0px 0px 0px 40%;
   }
   &__ahref{
-    color: rgb(255, 60, 0);
+    color: $ahref_color;
     text-decoration: none;
     font-weight: bold;
   }
@@ -62,7 +62,7 @@ body {
     padding: 16px;
     text-align: center;
     color: black;
-    background: rgb(255, 60, 0);
+    background: $ahref_color;
     border-radius: 10%;
     list-style-type: none;
   }
@@ -86,7 +86,7 @@ body {
   min-width: 200px;
   padding: 16px;
   &__link{
-    color: rgb(255, 60, 0);
+    color: $ahref_color;
     text-decoration: none;
     font-weight: bold;
   }
