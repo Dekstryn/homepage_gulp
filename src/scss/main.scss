@@ -136,7 +136,7 @@ body {
   &__box{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-tempalte-rows: repeat(2, 1);
+  grid-template-rows: repeat(2, 1);
   grid-column-gap: 32px;
   grid-row-gap: 32px;
   }
