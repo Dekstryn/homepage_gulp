@@ -106,4 +106,13 @@ body {
   .menu{
     margin: 16px 0px 0px 0px;
   }
+  .about-me{
+    &__profile-img--visible{
+    display: none;
+    }
+    &__title{
+      margin: 16px 0px;
+      text-align: center;
+    }
+  }
 }
