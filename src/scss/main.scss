@@ -96,3 +96,14 @@ body {
   font-style: italic;
   padding: 16px 0px;
 }
+@media(max-width: $tablet){
+  .pageview{
+    margin: 0px 0px 0px 0px;
+  }
+  .logo--visible{
+    display: none;
+  }
+  .menu{
+    margin: 16px 0px 0px 0px;
+  }
+}
