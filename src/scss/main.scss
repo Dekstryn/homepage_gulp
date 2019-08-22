@@ -104,7 +104,15 @@ body {
     display: none;
   }
   .menu{
-    margin: 16px 0px 0px 0px;
+    margin: 0px;
+    padding: 8px 8px 8px 8px;
+    background: $backgroud_color;
+    &__text{
+      padding: 0px;
+    }
+    &__text--visible{
+      display:none;
+    }
   }
   .about-me{
     &__profile-img--visible{
