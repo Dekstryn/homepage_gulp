@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krzysztof Nyrek Homepage</title>
+    <meta name="Krzysztof Nyrek Homepage" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
+
+    <!-- Title -->
+    <meta property="og:title" content="Krzysztof Nyrek Homepage" />
+    <!-- Description-->
+    <meta property="og:description" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header> 
+      <img class="logo logo--visible" src="../assets/img/logo_adnotio.jpg" alt="Logo firmy Adnotio">
+      <nav class="menu">
+        <button class="menu__switcher menu__switcher--js">&#9776;</button>
+        <ul class="menu__text menu__text--visible menu__text--js">
+          <li><a class="menu__ahref" href="index.html">Strona główna</a></li>
+          <li><a class="menu__ahref" href="artykuly.html">Artykuły</a></li>
+          <li><a class="menu__ahref" href="https://krzysztofnyrek.pl">Blog</a></li>
+          <!-- <li><a class="menu__ahref" href="#">Moje Projekty</a></li>-->
+        </ul>
+      </nav> 
+    </header>
+    <main class="cities">
+      <h1 class="cities__title">
+        Miejsca które odwiedziłem
+      </h1>
+      <div class="cities__box">
+        <div class="cities__box--one">
+          <h2 class="cities__h2">
+            <a class="cities__ahref" href="bydgoszcz.html">Bydgoszcz</a>
+          </h2>
+          <a class="cities__ahref" href="bydgoszcz.html"><img class="cities__img" src="../assets/img/bydgoszcz_mini.png" alt="Linoskoczek nad Brdą w Bydgoszczy"></a>
+        </div>
+        <div class="cities__box--one">
+          <h2 class="cities__h2">
+            <a class="cities__ahref" href="duchowo.html">Duchowo</a>
+          </h2>
+          <a class="cities__ahref" href="duchowo.html"><img class="cities__img" src="../assets/img/duchowo_mini.png" alt="Zabytkowy wiatrak Koźlak"></a>
+        </div>
+        <div class="cities__box--one">
+          <h2 class="cities__h2">
+            <a class="cities__ahref" href="krakow.html">Kraków</a>
+          </h2>
+          <a class="cities__ahref" href="krakow.html"><img class="cities__img" src="../assets/img/krakow_mini.png"	alt="Zabytkowa kamienica Kraków" ></a>
+        </div>
+        <div class="cities__box--one">
+          <h2 class="cities__h2">
+            <a class="cities__ahref" href="wieliczka.html">Wieliczka</a>
+          </h2>
+        <a class="cities__ahref" href="wieliczka.html"><img class="cities__img" src="../assets/img/wieliczka_mini.png"	alt="Szyb Górsko w Wieliczce" ></a>
+        </div>
+        <div class="cities__box--one">
+          <h2 class="cities__h2">
+            <a class="cities__ahref" href="wroclaw.html">Wrocław</a>
+          </h2>
+          <a class="cities__ahref" href="wroclaw.html"><img class="cities__img" src="../assets/img/wroclaw_mini.png"	alt="Plac społeczny" ></a>
+        </div>
+        <div class="cities__box--one">
+          <h2 class="cities__h2">
+            <a class="cities__ahref" href="praga.html">Praga</a>
+          </h2>
+          <a class="cities__ahref" href="praga.html"><img class="cities__img" src="../assets/img/Praga/praga_2_i.png"	alt="Widok na Pragę" ></a>
+        </div>
+      </div>
+    </main>
+    <footer class="body__footer">
+      Strona domowa Krzysztofa Nyrek, wszystkie treści są efektem tworzenia w trakcie szkolenia WTF - Co ten
+      frontend.
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

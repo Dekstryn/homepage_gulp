@@ -5,57 +5,213 @@
 html {
   box-sizing: border-box;
 }
-
 body {
-  background: $darkviolet;
-  color: aliceblue;
+  background: $backgroud_color;
+  color: black;
 }
-
-.himg{
-  grid-column-start: 1;
-  grid-row-start: 1;
+.logo{
+  position: fixed;
 }
 .pageview{
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  margin: 0px 0px 0px 186px;
 }
-.hmenu{
-  grid-column-start: 1;
-  grid-row-start: 2;
-}
-.myimg{
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-.htext{
-  grid-column-start: 2;
-  grid-row-start: 3;
+.menu{
+  position: fixed;
+  margin: 180px 0px 0px 0px;
+  &__text{
+    list-style-type: none;
+  }
+  &__ahref{
+    text-decoration: none;
+    color: black;
+  }
 }
 .about-me{
-  grid-column-start: 2;
-  grid-row-start: 4;
-  &__h2{
-    font-size: 16px;
+  justify-self: center;
+  &__profile-img{
+    border-radius: 30%;
+    margin: 90px 0px 0px 40%;
   }
-  &__img{
+  &__title{
+    font-size: 32px;
+    margin: 0px 0px 0px 40%;
   }
-  &__p{
+  &__ahref{
+    color: $ahref_color;
+    text-decoration: none;
+    font-weight: bold;
   }
 }
 .technology{
-  grid-column-start: 2;
-  grid-row-start: 5;
+  &__skills{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+  &__title{
+    font-size: 32px;
+    text-align: center;
+    margin: 24px 0px 0px 0px;
+  }
+  &__name{
+    flex: 1;
+    font-size: 32px;
+    margin: 16px;
+    padding: 16px;
+    text-align: center;
+    color: black;
+    background: $ahref_color;
+    border-radius: 10%;
+    list-style-type: none;
+  }
 }
 .subpages{
-  grid-column-start: 2;
-  grid-row-start: 6;
+  &__title{
+    font-size: 32px;
+    text-align: center;
+    margin: 0px 0px 32px 0px;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+  }
 }
-.contact{
-  grid-column-start: 2;
-  grid-row-start: 7;
+.articles, .blog, .places{
+  flex:1;
+  max-width: 300px;
+  min-width: 200px;
+  padding: 8px;
+  &__link{
+    color: $ahref_color;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  &__title{
+    margin: 0px 0px 16px 0px;
+  }
 }
 .body__footer{
-  grid-column-start: 2;
-  grid-row-start: 8;
+  text-align: center;
+  font-style: italic;
+  padding: 16px 0px;
+}
+/*subpage artykuly.html css style*/
+.article-view{
+  padding: 0px 16px 0px 16px;
+  &__header{
+  font-size: 32px;
+  text-align: center;
+  margin: 32px 0px 16px 0px;
+  }
+  &__img{
+    float: left;
+    border-radius: 10%;
+    padding: 0px 8px 8px 0px;
+  }
+  &__ul{
+    list-style-type: none;
+  }
+  &__ahref{
+    color: $ahref_color;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.main{
+  &__ahref{
+  color: $ahref_color;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 16px 0px 16px;
+  }
+  &__p{
+    padding: 0px 16px;
+  }
+}
+/*subpage miejsca.html css style*/
+.cities{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  &__box{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  }
+  &__title{
+    font-size: 32px;
+    text-align: center;
+    margin: 32px 0px 0px 0px;
+  }
+  &__ahref{
+    color: $ahref_color;
+    text-decoration: none;
+    font-weight: bold;
+    }
+  &__h2{
+    text-align: center;
+  }
+  &__img{
+    margin: 8px;
+  }
+}
+@media(min-width: 560px){
+  .cities__box{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+}
+@media(min-width: 890px){
+  .cities__box{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+}
+/*end subpage miejsca.html css style*/
+
+@media(min-width: $tablet){
+  .menu__switcher{
+    display: none;
+  }
+}
+@media(max-width: $tablet){
+  .pageview{
+    margin: 0px 0px 0px 0px;
+  }
+  .logo--visible{
+    display: none;
+  }
+  .menu{
+    margin: 0px;
+    padding: 8px 8px 8px 8px;
+    background: $backgroud_color;
+    width: 100%;
+    top: 0;
+    &__text{
+      padding: 0px;
+    }
+    &__text--visible{
+      display:none;
+    }
+    &__switcher{
+      display: block;
+      top: 0;
+    }
+  }
+  .about-me{
+    &__profile-img--visible{
+    display: none;
+    }
+    &__title{
+      margin: 48px 0px 16px 0px;
+      text-align: center;
+    }
+  }
 }

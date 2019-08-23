@@ -9,7 +9,7 @@
 
     <!-- Title -->
     <meta property="og:title" content="Krzysztof Nyrek Homepage" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
+    <!-- Description-->
     <meta property="og:description" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
     <meta property="og:url" content="" />
@@ -20,41 +20,36 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link
       rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
     />
 
     <link
       rel="icon"
       type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
+      href="assets/pwa/icons/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>  
+    <header> 
+      <img class="logo logo--visible" src="../assets/img/logo_adnotio.jpg" alt="Logo firmy Adnotio">
+      <nav class="menu">
+        <button class="menu__switcher menu__switcher--js">&#9776;</button>
+        <ul class="menu__text menu__text--visible menu__text--js">
+          <li><a class="menu__ahref" href="artykuly.html">Artykuły</a></li>
+          <li><a class="menu__ahref" href="https://krzysztofnyrek.pl">Blog</a></li>
+          <li><a class="menu__ahref" href="miejsca.html">Miejsca które </br>odwiedziłem</a></li>
+          <!-- <li><a class="menu__ahref" href="#">Moje Projekty</a></li>-->
+        </ul>
+      </nav> 
     </header>
     <main class="pageview">
-        <img class="himg" src="../assets/img/logo_adnotio.jpg" alt="Logo firmy Adnotio">
-        <nav class="hmenu">
-          <button class="hmenu__switcher menu__switcher--js">&#9776;</button>
-          <div class="hmenu__text menu__text--js">
-            <a class="hmenu__ahref" href="index.html">Strona główna</a>
-            <a class="hmenu__ahref" href="artykuly.html">Artykuły</a>
-            <a class="hmenu__ahref" href="https://krzysztofnyrek.pl">Blog</a>
-            <a class="hmenu__ahref" href="#">Miejsca które odwiedziłem</a>
-            <a class="hmenu__ahref" href="#">Moje Projekty</a>
-          </div>
-        </nav>
-      <section class="about-me" id="Kim_jestem">
-        <img class="myimg" src="../assets/img/KrzysztofNyrekProfil.png" alt="Zdjęcie autora strony">
-        <p class="htext">WEB Developer</p>
-        <h2 class="about-me__h2">
-          Kim jestem?
-        </h2>
-        <img class="about-me__img" src="../assets/img/KrzysztofNyrek.png"	alt="Krzysztof Nyrek" >
+      <section class="about-me">
+        <img class="about-me__profile-img about-me__profile-img--visible" src="../assets/img/KrzysztofNyrekProfil.png" alt="Zdjęcie autora strony">
+        <p class="about-me__title">WEB Developer</p>
         <p class="about-me__p">
-          Pierwszy kontakt z programowaniem miałem jakieś 20 lat temu. Tata kupił Atari 800XL. Początkowo komputer służył tylk odo uruchamiania gier, ale z czasem zacząłem się zastanawiać, jak te gry działają? Jak to się dzieje, że gra działa tak jak działa. Miałem do dyspozycji kilka egzemplarzy Bajtka i duży podręcznik do obsługi Arati, gdzie znajdował się opis sposobu pisania programów w Basicu. Więcej o Basicu możesz znaleźć tutaj: <a class="o-mnie__ahref" href="https://pl.wikipedia.org/wiki/Atari_BASIC">Atari_BASIC</a>. Wtedy nie ogarnąłem nic więcej poza prostymi funkcjami if, ale udało mi się dzięki temu stworzyć pierwszą prostą grę logiczną. Szkoda, że przepadła razem z Atari.
+          Pierwszy kontakt z programowaniem miałem jakieś 20 lat temu. Tata kupił Atari 800XL. Początkowo komputer służył tylk odo uruchamiania gier, ale z czasem zacząłem się zastanawiać, jak te gry działają? Jak to się dzieje, że gra działa tak jak działa. Miałem do dyspozycji kilka egzemplarzy Bajtka i duży podręcznik do obsługi Arati, gdzie znajdował się opis sposobu pisania programów w Basicu. Więcej o Basicu możesz znaleźć tutaj: <a class="about-me__ahref" href="https://pl.wikipedia.org/wiki/Atari_BASIC">Atari_BASIC</a>. Wtedy nie ogarnąłem nic więcej poza prostymi funkcjami if, ale udało mi się dzięki temu stworzyć pierwszą prostą grę logiczną. Szkoda, że przepadła razem z Atari.
         </p>
         <p class="about-me__p">	
           Później miałem możliwość kodowania przez krótki czas w Delphi. Niestety czasy to były takie, że z internetem można się było łączyć tylko przez modem i kosztowało to bajeczne sumy, więc moja zabawa na tamten czas z programowaniem się zakończyła. Nie miałem też możliwości podjęcia nauki w technikum informatycznym, bo najbliższe dostępne było daleko od rodzinnego miasta. Takie to były offlinowe czasy 😉
@@ -72,42 +67,55 @@
           Poza programowaniem lubię podróżować. Na tej stronie znajdzie się również sekcja poświęcona miejscom które odwiedziłem, zdjęciom jakie się udało zrobić i ciekawych rzeczach, które odkryłem. 
         </p>
       </section>
-      <section class="technology" id="Technologie">
-        <h2>Technologie w których pracuję</h2>
-        <p>HTML</p>
-        <p>CSS</p>
-        <P>SCSS</P>
-        <p>GULP</p>
-        <p>JAVA SCRIPT</p>
-        <p>REACT</p>
+      <section class="technology">
+        <h2 class="technology__title">Technologie w których pracuję</h2>
+        <ul class="technology__skills">
+          <li class="technology__name">HTML</li>
+          <li class="technology__name">CSS</li>
+          <li class="technology__name">SCSS</li>
+          <li class="technology__name">GULP</li>
+          <li class="technology__name">JAVA SCRIPT</li>
+          <li class="technology__name">REACT</li>
+        </ul>
       </section>
-      <section class="subpages" id="Podstrony">
-        <h2 class="subpages__h2">
-          Podstrony
-        </h2>
-        <section class="my-articles">
-          <h3 class="my-articles__h3">
-            Artykuły
-          </h3>
-          <p class="my-articles__p"> 
-            Ucząc się programowanie zdobywam masę wiedzy. Część tej wiedzy szybko ucieka. Wiedząc, że najlepszym sposobem na naukę, jest przekazywanie wiedzy innym postanowiłem pisać dłuższe artykuły z określonych obszarów programowania. Z jednej strony pomaga mi to usystematyzować zdobytą wiedzę, a z drugiej strony może zaciekawię cię jakimś obszarem. Zapraszam do lektury.<br /> 
-            <a class="my-articles__ahref" href="artykuly.html">Sprawdź dostępne artykuły</a>
-          </p>
-        </section>
-        <section class="blog" id="Blog">
-          <h3 class="blog__h3">
-            O czym piszę na blogu?
-          </h3>
-          <p class="blog__p">
+      <section class="subpages">
+       <h2 class="subpages__title">
+        Na mojej stronie znajdziesz:
+       </h2>
+       <div class="subpages__box">
+        <div class="articles">
+        <h3 class="articles__title">
+          Artykuły
+        </h3>
+         <p class="articles__text"> 
+           Ucząc się programowanie zdobywam masę wiedzy. Część tej wiedzy szybko ucieka. Wiedząc, że najlepszym sposobem na naukę, jest przekazywanie wiedzy innym postanowiłem pisać dłuższe artykuły z określonych obszarów programowania. Z jednej strony pomaga mi to usystematyzować zdobytą wiedzę, a z drugiej strony może zaciekawię cię jakimś obszarem. Zapraszam do lektury.<br />
+          </p> 
+           <a class="articles__link" href="artykuly.html">Interesują mnie artykuły</a>
+        </div>
+        <div class="blog">
+        <h3 class="blog__title">
+          Blog
+        </h3>
+         <p class="blog__text">
           Mając 35 lat stwierziłem, że programowanie to moje hobby i rzuciłem się w wir nauki. Szybko okazało się, że wiele osób zastanawia się, jak długo trzeba się uczyć programowania i co można osiągnąć w tym segmencie rynku. Sam nie wiem, ale postanowiłem dzielić się swoimi doświadczeniami z tej drogi. Na blogu co tydzień publikuję podsumowanie mijającego tygodnia. Jeżeli masz ochotę, to zapraszam Cię do wspólnej przygody. 
-          </p>
-          <a class="my-articles__ahref" href="https://krzysztofnyrek.pl/">Sprawdź co nowego na blogu</a>
-        </section>
+         </p>
+         <a class="blog__link" href="https://krzysztofnyrek.pl/">Sprawdź co nowego na blogu</a>
+        </div>
+        <div class="places">
+         <h3 class="places__title">
+           Odwiedzone Miejsca
+         </h3>
+         <p class="places__title">
+           Od czasu do czasu podróżuję i uwielbiam robić zdjęcia w podróży. Część z tych zdjęć publikuję, żeby zainspirować innych do podróży. Świat jest pełen pięknych miejsc. Warto je odwiedzić i zobaczyć te skarby na własne oczy.
+         </p>
+         <a class="places__link" href="miejsca.html">Chcę zobacyć zdjęcia</a>
+        </div>
+       </div>
       </section>
-      <section class="contact" id="Kontakt">
+      <!-- <section class="contact">
         <h2>KONTAKT</h2>
         <p>Chcesz się ze mną skontaktować, skorzystaj z poniższego formularza</p>
-      </section>
+      </section>-->
     </main>
     <footer class="body__footer">
       Strona domowa Krzysztofa Nyrek, wszystkie treści są efektem tworzenia w trakcie szkolenia WTF - Co ten
