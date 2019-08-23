@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krzysztof Nyrek Homepage</title>
+    <meta name="Krzysztof Nyrek Homepage" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
+
+    <!-- Title -->
+    <meta property="og:title" content="Krzysztof Nyrek Homepage" />
+    <!-- Description-->
+    <meta property="og:description" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header> 
+      <img class="logo logo--visible" src="../assets/img/logo_adnotio.jpg" alt="Logo firmy Adnotio">
+      <nav class="menu">
+        <button class="menu__switcher menu__switcher--js">&#9776;</button>
+        <ul class="menu__text menu__text--visible menu__text--js">
+          <li><a class="menu__ahref" href="index.html">Strona główna</a></li>
+          <li><a class="menu__ahref" href="https://krzysztofnyrek.pl">Blog</a></li>
+          <li><a class="menu__ahref" href="miejsca.html">Miejsca które </br>odwiedziłem</a></li>
+          <!-- <li><a class="menu__ahref" href="#">Moje Projekty</a></li>-->
+        </ul>
+      </nav> 
+    </header>
+    <main class="pageview">
+      <article class="article-view">
+				<header>
+						<h1 class="article-view__header">Duchowo</h1>
+ 				</header>
+        <img class="article-view__img--big" src="../assets/img/duchowo.png" alt="Zabytkowy wiatrak Koźlak">
+        <img class="article-view__img--small" src="../assets/img/duchowo_mini.png" alt="Zabytkowy wiatrak Koźlak">
+				<p class="article-view__p">wieś w Polsce położona w województwie dolnośląskim, w powiecie milickim, w gminie Milicz. W Duchowie można zobaczyć zabytkowy wiatrak Koźlak, a nawet wejść do środka. Obok wiatraka znajduje się odwzorowana murowana wiejska chata. Ciekawy punk do odwiedzenia podczas rowerowych wypraw w Dolinie Baryczy.</p>
+		  </article>
+		<p class="main__p">Źródło:</p>
+		<a class="main__ahref" href="https://pl.wikipedia.org/wiki/Bydgoszcz">Wikipedia</a>
+			</article>
+    </main>
+    <footer class="body__footer">
+      Strona domowa Krzysztofa Nyrek, wszystkie treści są efektem tworzenia w trakcie szkolenia WTF - Co ten
+      frontend.
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
