@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Krzysztof Nyrek Homepage</title>
+    <meta name="Krzysztof Nyrek Homepage" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
+
+    <!-- Title -->
+    <meta property="og:title" content="Krzysztof Nyrek Homepage" />
+    <!-- Description-->
+    <meta property="og:description" content="to jest moja strona domowa, na której prezentuję moje prace jako web developera oraz miejsca, które odwiedziłem" />
+    <!-- full url with http(s)-->
+    <meta property="og:url" content="https://dekstryn.github.io/homepage_gulp/" />
+    <!-- full url to the image with http(s)-->
+    <meta property="og:image" content="https://dekstryn.github.io/homepage_gulp/assets/img/Adnotio.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header> 
+      <img class="logo logo--visible" src="../assets/img/logo_adnotio.jpg" alt="Logo firmy Adnotio">
+      <nav class="menu">
+        <button class="menu__switcher menu__switcher--js">&#9776;</button>
+        <ul class="menu__text menu__text--visible menu__text--js">
+          <li><a class="menu__ahref" href="index.html">Strona główna</a></li>
+          <li><a class="menu__ahref" href="https://krzysztofnyrek.pl">Blog</a></li>
+          <li><a class="menu__ahref" href="miejsca.html">Miejsca które </br>odwiedziłem</a></li>
+          <!-- <li><a class="menu__ahref" href="#">Moje Projekty</a></li>-->
+        </ul>
+      </nav> 
+    </header>
+    <main class="pageview">
+      <article class="article-view">
+				<header>
+						<h1 class="article-view__header">Wieliczka</h1>
+ 				</header>
+        <img class="article-view__img--big" src="../assets/img/wieliczka.png" alt="Szyb Górsko w Wieliczce">
+        <img class="article-view__img--small" src="../assets/img/wieliczka_mini.png" alt="Szyb Górsko w Wieliczce">
+        <p class="article-view__p">
+          miasto powiatowe w województwie małopolskim, w powiecie wielickim, siedziba władz gminy miejsko-wiejskiej Wieliczka oraz władz powiatu. Miasto liczy 22 946 mieszkańców (31 grudnia 2017), powierzchnia wynosi 13,41 km². Rozwijało się od XIII w. jako ośrodek wydobywczy, obecnie pełni głównie funkcję typowo turystyczną (kopalnia soli) i sypialnianą (aglomeracja krakowska). Znane jest z unikatowej w skali świata kopalni soli, którą odwiedza ponad 1 mln turystów rocznie (dane od stycznia do grudnia 2017 mówią o 1,7 mln osób, rok wcześniej 1,5 mln.)
+        </p>
+      </article>
+		<p class="main__p">Źródło:</p>
+		<a class="main__ahref" href="https://pl.wikipedia.org/wiki/Wieliczka">Wikipedia</a>
+			</article>
+			<p>
+				<a class="main__ahref" href="miejsca.html">Powrót</a>
+			</p>
+    </main>
+    <footer class="body__footer">
+      Strona domowa Krzysztofa Nyrek, wszystkie treści są efektem tworzenia w trakcie szkolenia WTF - Co ten
+      frontend.
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
