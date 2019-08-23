@@ -136,13 +136,25 @@ body {
   justify-content: center;
   &__box{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1);
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
+  grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media(min-width: 560px){
+  .cities__box{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+}
+@media(min-width: 890px){
+  .cities__box{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
   }
 }
 /*end subpage miejsca.html css style*/
+
 @media(min-width: $tablet){
   .menu__switcher{
     display: none;
