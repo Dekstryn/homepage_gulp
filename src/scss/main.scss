@@ -121,11 +121,16 @@ body {
     font-weight: bold;
   }
 }
-.main__ahref{
+.main{
+  &__ahref{
   color: $ahref_color;
   text-decoration: none;
   font-weight: bold;
   padding: 0px 16px 0px 16px;
+  }
+  &__p{
+    padding: 0px 16px;
+  }
 }
 /*subpage miejsca.html css style*/
 .cities{
